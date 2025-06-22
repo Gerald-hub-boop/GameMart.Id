@@ -85,5 +85,19 @@
         </div>
     </main>
 
+    <script>
+    // Ambil elemen tombol dan menu berdasarkan ID yang kita buat tadi
+    const hamburgerButton = document.getElementById('hamburger-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    // Tambahkan 'event listener' untuk klik pada tombol hamburger
+    hamburgerButton.addEventListener('click', () => {
+        // Toggle class 'hidden' pada mobile menu
+        // Jika ada class 'hidden', maka akan dihapus.
+        // Jika tidak ada, maka akan ditambahkan.
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
 </body>
 </html>
